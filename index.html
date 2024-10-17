@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Đổi màu tôi đi</h2>
+<button onclick="myFunction()">Xanh</button>
+
+    <h3>Các phép toán</h2>
+
+    <!-- Phép toán cộng, trừ, nhân, chia -->
+    <div id="calculations">
+        <div>
+            <input type="number" id="add1"> + 
+            <input type="number" id="add2">
+            = <input type="text" id="addResult" readonly>
+            <button onclick="calculate('+')">Tính</button>
+        </div>
+        <div>
+            <input type="number" id="sub1"> - 
+            <input type="number" id="sub2">
+            = <input type="text" id="subResult" readonly>
+            <button onclick="calculate('-')">Tính</button>
+        </div>
+        <div>
+            <input type="number" id="mul1"> * 
+            <input type="number" id="mul2">
+            = <input type="text" id="mulResult" readonly>
+            <button onclick="calculate('*')">Tính</button>
+        </div>
+        <div>
+            <input type="number" id="div1"> / 
+            <input type="number" id="div2">
+            = <input type="text" id="divResult" readonly>
+            <button onclick="calculate('/')">Tính</button>
+        </div>
+    </div>
+
+    <!-- Phép toán vừa thực hiện -->
+    <h3>Các phép toán vừa thực hiện</h2>
+    <div id="resultLog"></div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
+
